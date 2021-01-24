@@ -37,5 +37,10 @@ RUN cd /container && \
 	pip install -e .
 
 RUN cd /container && \
+    git clone https://github.com/SINGROUP/dscribe.git && \
+	cd dscribe %% \
+	pip install -e .
+
+RUN cd /container && \
 	mkdir -p data && \
 	cd data 
