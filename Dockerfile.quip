@@ -34,7 +34,7 @@ RUN cd /container && \
 
 RUN cd /container && \
     git clone https://github.com/SINGROUP/dscribe.git && \
-	cd dscribe %% \
+	cd dscribe && \
 	pip install -e .
 
 RUN cd /container && \
