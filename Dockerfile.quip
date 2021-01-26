@@ -10,6 +10,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends build-essential \
                      gcc \
                      gfortran \
+		     valgrind \
                      vim && \
     apt-get clean 
 
